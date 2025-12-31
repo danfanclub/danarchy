@@ -1,0 +1,1 @@
+/home/merlin/.config/omarchy/current/theme/neovim.lua

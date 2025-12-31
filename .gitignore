@@ -1,0 +1,23 @@
+# Ignore nested git repositories' metadata so their files are committed
+# (We want the FILES, not the history of these sub-repos)
+.git/
+**/.git/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+*~
+*.swp
+*.bak
+*.bak.*
+*.tmp
+
+# Ignore Omarchy's "current" symlink if you prefer to set it manually or let the installer handle it
+# However, keeping it might be useful to remember your last used theme.
+# Uncomment the line below to ignore it:
+# current
+
+# Ignore any potential large build artifacts or caches if they exist
+node_modules/
+dist/
+build/
