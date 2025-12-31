@@ -32,3 +32,13 @@ if [ -f ~/.config/omarchy/scripts/omarchy-theme-set-obsidian ]; then
 fi
 
 echo "Setup complete! You may need to reload Waybar, restart Neovim, or reload Omarchy."
+
+# 4. Install Custom Fonts
+if [ -d ~/.config/omarchy/fonts ]; then
+    echo "Installing custom fonts..."
+    mkdir -p ~/.local/share/fonts/OmarchyCustom
+    cp ~/.config/omarchy/fonts/*.ttf ~/.local/share/fonts/OmarchyCustom/
+    fc-cache -f
+    echo "Fonts installed."
+fi
+
